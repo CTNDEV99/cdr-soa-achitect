@@ -1,6 +1,6 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
-import {Service} from './service.model';
+import {Entity, belongsTo, model, property} from '@loopback/repository';
 import {Abonne} from './abonne.model';
+import {Service} from './service.model';
 
 @model()
 export class AbService extends Entity {
@@ -14,6 +14,7 @@ export class AbService extends Entity {
   @property({
     type: 'boolean',
     required: true,
+    default: true,
   })
   active: boolean;
 
