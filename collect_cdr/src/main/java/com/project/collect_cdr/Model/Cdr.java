@@ -14,7 +14,7 @@ public class Cdr {
     private Date dateDeCreation;
     private Long idEntrant;
     private Long idSortant;
-    private int time_voice;
+    private int timeVoice;
 
     @PrePersist
     protected void onCreate() {
